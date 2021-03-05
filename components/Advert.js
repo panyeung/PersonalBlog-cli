@@ -6,18 +6,12 @@ const Advert = () => {
     <div className={`${style.ad__div} comm-box`}>
       <div>
         <div>
-          <img
-            src="http://blogimages.jspang.com/flutter_ad2.jpg"
-            width="100%"
-          />
+          <img src="" width="100%" />
         </div>
       </div>
       <div>
         <div>
-          <img
-            src="http://blogimages.jspang.com/flutter_ad2.jpg"
-            width="100%"
-          />
+          <img src="" width="100%" />
         </div>
       </div>
       <div>

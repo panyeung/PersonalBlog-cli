@@ -16,6 +16,7 @@ import Footer from "../components/Footer";
 import axios from "axios";
 import servicePath from "../config/apiUrl";
 import Link from "next/link";
+import style from "../public/static/style/page/index.module.css";
 
 const MyList = (list) => {
   const [myList, setMylist] = useState(list.data);
@@ -46,12 +47,12 @@ const MyList = (list) => {
             dataSource={myList}
             renderItem={(item) => (
               <List.Item>
-                <div className="list__title">
+                <div className={style.list__title}>
                   <Link href={{ pathname: "/detail", query: { id: item._id } }}>
                     <a>{item.title}</a>
                   </Link>
                 </div>
-                <div className="list__icon">
+                <div className={style.list__icon}>
                   <span>
                     <CalendarOutlined />
                     {item.addTime}
@@ -65,7 +66,7 @@ const MyList = (list) => {
                     {item.view_count}
                   </span>
                 </div>
-                <div className="list-context">{item.introduce}</div>
+                <div className={style.list__context}>{item.introduce}</div>
               </List.Item>
             )}
           />
