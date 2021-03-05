@@ -16,7 +16,10 @@ const Advert = () => {
       </div>
       <div>
         <div>
-          <img src="" width="100%" />
+          <img
+            src="http://blogimages.jspang.com/flutter_ad2.jpg"
+            width="100%"
+          />
         </div>
       </div>
     </div>

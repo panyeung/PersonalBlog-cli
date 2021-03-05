@@ -3,19 +3,14 @@ import { Avatar, Divider } from "antd";
 import { GithubOutlined, LinkedinOutlined } from "@ant-design/icons";
 import style from "../public/static/style/components/author.module.css";
 import Link from "next/link";
-import headImg from "../public/static/img/head_img.jpg";
-import Image from "next/image";
 const Author = () => {
   return (
     <div className={`${style.author__div} comm-box`}>
-      <Image
-        className={style.author__avatar}
-        src={headImg}
-        alt="me"
-        width="64"
-        height="64"
-        quality="100"
-      />
+      <div
+        className="author-avatar"
+        src="../public/img/head_img.jpg"
+        size={100}
+      ></div>
       <div className={style.author__introduction}>
         Focus on becoming a frontend developer.
       </div>

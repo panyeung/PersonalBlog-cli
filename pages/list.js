@@ -16,7 +16,7 @@ import Footer from "../components/Footer";
 import axios from "axios";
 import servicePath from "../config/apiUrl";
 import Link from "next/link";
-import style from "/static/style/page/index.module.css";
+import style from "../public/static/style/page/index.module.css";
 
 const MyList = (list) => {
   const [myList, setMylist] = useState(list.data);
