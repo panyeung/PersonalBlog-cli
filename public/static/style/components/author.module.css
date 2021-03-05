@@ -18,3 +18,7 @@
 .author__account:hover {
   cursor: pointer;
 }
+
+.author__avatar {
+  border-radius: 50%;
+}
