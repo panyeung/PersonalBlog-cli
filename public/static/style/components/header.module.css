@@ -1,0 +1,22 @@
+.header {
+  background-color: white;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.header__logo {
+  color: #1e90ff;
+  font-size: 1.4rem;
+  text-align: left;
+}
+
+.header__txt {
+  font-size: 0.6rem;
+  color: #999;
+  display: inline-block;
+  padding-left: 0.3rem;
+}
+
+.header__nav {
+  font-size: 1rem;
+}
