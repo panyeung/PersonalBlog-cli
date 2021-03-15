@@ -21,10 +21,6 @@ import "highlight.js/styles/monokai-sublime.css";
 import Tocify from "../components/tocify.tsx";
 
 import servicePath from "../config/apiUrl";
-import dynamic from "next/dynamic";
-const ReactLive2d = dynamic(import("react-live2d"), {
-  ssr: false,
-});
 
 const Detail = (props) => {
   const tocify = new Tocify();
@@ -52,18 +48,6 @@ const Detail = (props) => {
 
   return (
     <div>
-      <ReactLive2d
-        width={150}
-        height={250}
-        bottom={"1px"}
-        left={"1px"}
-        ModelList={["Hiyori"]}
-        TouchBody={["Hi", "How You Doing?"]}
-        TouchHead={["????"]}
-        TouchDefault={[""]}
-        PathFull="http://publicjs.supmiao.com/Resources/"
-        menuLis={[]}
-      />
       <Head>
         <title>{props.title}</title>
       </Head>
