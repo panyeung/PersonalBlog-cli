@@ -21,6 +21,11 @@ import marked from "marked"; //interpret markdown
 import hljs from "highlight.js"; //highlight style
 import "highlight.js/styles/monokai-sublime.css";
 
+import dynamic from "next/dynamic";
+const ReactLive2d = dynamic(import("react-live2d"), {
+  ssr: false,
+});
+
 const Home = (list) => {
   const [myList, setMylist] = useState(list.data);
 
@@ -40,6 +45,18 @@ const Home = (list) => {
 
   return (
     <div>
+      <ReactLive2d
+        width={150}
+        height={250}
+        bottom={"1px"}
+        left={"1px"}
+        ModelList={["Hiyori"]}
+        TouchBody={["Hi", "How You Doing?"]}
+        TouchHead={["????"]}
+        TouchDefault={[""]}
+        PathFull="http://publicjs.supmiao.com/Resources/"
+        menuLis={[]}
+      />
       <Head>
         <title>Home</title>
       </Head>
