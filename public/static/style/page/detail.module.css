@@ -66,6 +66,9 @@
   margin: 0px 3px;
   color: #ff502c;
 }
+.detailed__content iframe {
+  width: 100%;
+}
 .detailed__content blockquote {
   border-left: 4px solid #cbcbcb;
   padding: 10px 10px 10px 30px;
